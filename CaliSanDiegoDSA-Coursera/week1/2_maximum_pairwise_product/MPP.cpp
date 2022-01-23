@@ -21,13 +21,12 @@ int main() {
     int n;
     cin >> n;
 
-    vector<int> num;
+    vector<int> num(n);
     for (int i = 0; i < n; i++) {
         cin >> num[i];
     }
 
-    int f = mpp(num);
-    cout << f << endl;
+    cout << mpp(num) << endl;
 
     return 0;
 }
